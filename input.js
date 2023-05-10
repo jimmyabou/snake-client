@@ -28,6 +28,7 @@ const setupInput =  (conn) =>{
     if (data === '\u0003') {
       process.exit();
     }
+    connection.write("Say: J here");
   };
   stdin.on("data", handleUserInput);
   return stdin;
